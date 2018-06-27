@@ -9,6 +9,7 @@ User-->Ethereum: 注册proxy
 IdentityProvider-->Ethereum: 注册proxy
 PDS/PDC-->Ethereum: 注册proxy
 ServiceProvider-->Ethereum: 注册proxy
+PDS/PDC-->ServiceProvider: 公开服务协议
 ServiceProvider-->PDS/PDC: 授权信任关系
 User-->IdentityProvider: 身份信息认证申请
 IdentityProvider-->User: 身份信息规格
