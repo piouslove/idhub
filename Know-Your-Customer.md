@@ -58,9 +58,9 @@ Note over IdentityProvider: 开启pds服务接口
 IdentityProvider-->Ethereum: 已开通的pds服务接口[idp_sig pds_url user_sig]
 
 ServiceProvider-->IdentityProvider: 合作费用[transaction]
-IdentityProvider-->ServiceProvider: 已开通的pds服务接口[idp_sig pds_url user_sig]
+IdentityProvider-->ServiceProvider: 已签名的合作信息[idp_sig sp_sig cooperation]
 
-ServiceProvider-->Ethereum: KYC支持的Idp[Idps_list]
+ServiceProvider-->Ethereum: KYC支持的Idp[Idps_list idp_sigs sp_sig cooperation]
 User-->ServiceProvider: 请求服务[proxy_address]
 ServiceProvider-->User: KYC要求或规格[question/schema]
 User-->Ethereum: 查询被支持的Idp[sp_proxy service_name]
